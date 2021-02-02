@@ -1,0 +1,553 @@
+/*-------------------------
+        Import
+---------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+/*-------------------------
+        Init
+---------------------------*/
+body
+{
+    max-width: 1280px;
+    margin: auto;
+    
+    
+}
+
+
+
+*
+{
+    font-family: 'Raleway', sans-serif;
+}
+.gradeIcon
+{
+    color: #c1c1c1!important;
+}
+/*-------------------------
+        Header
+---------------------------*/
+#manga-title
+{
+    display: none;
+}
+
+header
+{background-color: #724444;
+
+
+}
+
+#logo
+{
+    height: 60px;
+}
+
+.nav ul
+{
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+}
+
+.nav h3
+{
+    font-weight: normal!important;
+}
+
+.nav a
+{
+    color: black;
+    padding: 1em;
+    display: block;
+    text-align:center;
+    text-decoration: none;
+}
+.nav a:hover 
+{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+.nav .menu
+{
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 160px);
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__logo {
+    justify-self: start;
+    min-width: 97px;
+    min-height: 45px
+}
+
+
+#menu-title
+{
+    display: none;
+}
+
+.nav a.blue
+{
+    color: #0065FC;
+}
+
+/*-------------------------
+        Main
+---------------------------*/
+
+#mainText
+{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#localisation
+{
+    display: flex;
+    align-items: center;
+}
+
+#ico-localisation
+{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#ico-localisation i
+{
+    margin-top: 12px;
+}
+
+
+#site-search
+{
+    height: 40px;
+    width: 245px;
+    border: 0.5px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+}
+
+#button-search
+{
+    background-color: #fc0000;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 40px;
+    border: none;
+}
+
+#mobile-display
+{
+    display: none;
+}
+
+/*-------------------------
+        Filters
+---------------------------*/
+
+#filters
+{
+    display: flex;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#filters p
+{
+    font-weight: bold;
+}
+
+.title-filter
+{
+    font-weight: bold;
+    font-size: 21px;
+    margin-right: 25px;
+    margin-top: 0px;
+}
+
+.individual-filters
+{
+    margin-right: 2rem;
+    display: inline-flex;
+    border: 1px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-weight: bold;
+    height: 48px;
+    max-width: 240px;
+}
+
+.individual-filters h3
+{
+    margin-top: 13px;
+    font-size: 18px;
+    margin-left: 8px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.individual-filters:hover
+{
+    transform: scale(1.10);
+}
+
+
+
+
+.ico-filters
+{
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -1px;
+    color: #fc0000;
+}
+
+#info
+{
+    display: flex;
+    align-items: center;
+}
+.ico-info
+ {
+    display: inline-flex;
+    color: #fc0000;
+    border: 1px solid #d9d9d9;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+ }
+
+ .ico-info i
+ {
+    margin-top: 5px ;
+    margin-left: 9px;
+ }
+/*-------------------------
+            MANGA
+---------------------------*/
+
+#flex
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+#manga-margin
+{
+    margin: 0px 0px 0px 15px;
+}
+
+.manga
+{
+    
+    width: 880px;
+    min-width: 360px;
+    margin: 20px 20px 40px 0px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+#manga-title
+{
+    font-size: 21px;
+    margin: 30px 0px 30px 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.manga-card
+{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 250px;
+    margin: 0px 20px 20px 0px ;
+    padding: 4px;
+    line-height: 5px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0px 0px 3px 2px rgb(204 201 201 / 1);
+}
+
+.manga-card img
+{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+
+}
+
+.manga-card:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-title
+{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.card-price
+{
+    font-size: 1rem;
+}
+
+.manga-card figure
+{
+    margin-top: 0px !important;
+}
+
+.detail-manga
+{
+    line-height: 5px;
+    margin-left: 10px;
+}
+
+
+
+
+#show-more, #show-more a
+{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#show-more:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*-------------------------
+        Most Popular
+---------------------------*/
+#most-popular-title
+{
+    margin: 30px 0px 0px 10px;
+    font-size: 21px;
+}
+#most-popular-title i
+{
+    margin-left: 130px;
+}
+
+#most-popular
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px 40px 0px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    min-width: 370px;
+    width: 380px;
+}
+
+#most-popular-cards
+{
+    margin: 0 0 0 10px !important;
+}
+
+.most-popular-card
+{
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px rgb(209 201 201 / 0.4);
+    border-radius: 20px;
+    margin: 0 auto 30px auto;
+    min-width: 320px;
+    max-width: 360px;
+}
+
+.most-popular-card:hover
+{
+    transform: scale(1.03);
+}
+
+.most-popular-title
+{
+    display: flex!important;
+    align-items: center;
+}
+
+
+#most-popular i.stonks
+{
+    font-size: 1.2em;
+}
+
+#most-popular img
+{
+    margin: 5px 0 5px 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height:350px;
+    width: 250px;
+    object-fit: cover;
+
+}
+
+.figure-popular
+{
+    display: inline-flex;
+    margin: 0px !important;
+}
+
+.figure-popular figcaption
+{
+    margin: 0px 0px 5px 10px!important;
+}
+
+/*-------------------------
+        Figurine
+---------------------------*/
+
+#figurine
+{
+    display: flex;
+    margin-left: 40px;
+}
+
+#figurine-title
+{
+    display: inline-block;
+}
+
+#figurine-cards
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.figurine-card-max
+{
+    height: 395px;
+    width: 280px;
+    margin: 0px 25px 20px 0;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px rgb(209 201 201 / 0.4);
+}
+
+.figurine-card-max img
+{
+    height: 350px;
+    width: 280px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.figurine-card
+{
+    height: 210px;
+    width: 280px;
+    margin: 0px 25px 20px 0px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px rgb(209 201 201 / 0.4);
+}
+
+.figurine-card img
+{
+    height: 170px;
+    width: 280px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.figurine-card-smaller
+{
+    height: 170px;
+    width: 280px;
+    margin: 0px 25px 20px 0px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px rgb(209 201 201 / 0.4);
+}
+
+.figurine-card-smaller img
+{
+    height: 120px;
+    width: 280px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.figurine-cards-smaller
+{
+    flex-direction: column;
+}
+
+.figure-figurine
+{
+    margin: 0px !important;
+}
+
+
+.figurine-card-title h3
+{
+    margin: 7px 0px 2px 25px!important;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.figurine-card-max:hover,
+.figurine-card:hover,
+.figurine-card-smaller:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/*-------------------------
+        Footer
+---------------------------*/
+
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 190px;
+    min-width: 360px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer-title
+{
+    display: none;
+
+}
+
